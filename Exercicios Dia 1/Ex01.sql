@@ -3,12 +3,12 @@ CREATE DATABASE db_rh;
 USE db_rh;
 
 CREATE TABLE tb_colaboradores(
-	id BIGINT AUTO_INCREMENT PRIMARY KEY,
-	nome VARCHAR(255) NOT NULL,
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
     data_nascimento DATE NOT NULL,
     cargo VARCHAR(100) NOT NULL,
     departamento VARCHAR(100) NOT NULL,
-	salario DECIMAL(10,2) NOT NULL
+    salario DECIMAL(10,2) NOT NULL
 );
 
 INSERT INTO tb_colaboradores(nome, data_nascimento, cargo, departamento, salario)
