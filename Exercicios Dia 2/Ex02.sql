@@ -3,9 +3,9 @@ CREATE DATABASE db_pizzaria_legal;
 USE db_pizzaria_legal;
 
 CREATE TABLE tb_categorias(
-id BIGINT AUTO_INCREMENT PRIMARY KEY,
-tipo VARCHAR(50) NOT NULL,
-descrição VARCHAR(50) NOT NULL
+	id BIGINT AUTO_INCREMENT PRIMARY KEY,
+	tipo VARCHAR(50) NOT NULL,
+	descrição VARCHAR(50) NOT NULL
 );
 
 INSERT INTO tb_categorias(tipo, descrição)
@@ -16,13 +16,13 @@ VALUES ("Salgada", "Tradicional"),
        ("Doce", "Premium");
 
 CREATE TABLE tb_pizzas(
-id BIGINT AUTO_INCREMENT PRIMARY KEY,
-sabor VARCHAR(100) NOT NULL,
-massa VARCHAR(50) NOT NULL, 
-tamanho VARCHAR(50) NOT NULL,
-preco DECIMAL(10,2) NOT NULL,
-categorias_id BIGINT,
-FOREIGN KEY (categorias_id) REFERENCES tb_categorias(id)
+	id BIGINT AUTO_INCREMENT PRIMARY KEY,
+	sabor VARCHAR(100) NOT NULL,
+	massa VARCHAR(50) NOT NULL, 
+	tamanho VARCHAR(50) NOT NULL,
+	preco DECIMAL(10,2) NOT NULL,
+	categorias_id BIGINT,
+	FOREIGN KEY (categorias_id) REFERENCES tb_categorias(id)
 );
 
 INSERT INTO tb_pizzas(sabor, massa, tamanho, preco, categorias_id)
