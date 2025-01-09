@@ -30,7 +30,7 @@ VALUES ("Calabresa", "Padrão", "Grande", 45.90, 1),
        ("Brigadeiro", "Padrão", "Média", 38.50, 4),
        ("Margherita", "Padrão", "Pequena", 30.00, 1),
        ("Quatro Queijos", "Pan", "Família", 72.00, 2),
-	   ("Frango com Catupiry", "Padrão", "Média", 42.00, 1),
+       ("Frango com Catupiry", "Padrão", "Média", 42.00, 1),
        ("Nutella com Morango", "Pan", "Broto", 39.00, 5),
        ("Brocolis", "Padrão", "Pequena", 32.50, 3),
        ("Pepperoni com Cream Cheese", "Padrão", "Grande", 69.90, 2);
